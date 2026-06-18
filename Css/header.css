@@ -158,8 +158,9 @@ nav a:hover {
 
   .img-mobile {
     display: none;
-  }img
-  .navigation-menu a:hover {
+  }
+
+  .navigation-menu nav a:hover {
     color: var(--primary-color);
   }
 }
