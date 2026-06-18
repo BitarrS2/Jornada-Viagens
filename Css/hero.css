@@ -5,6 +5,11 @@
   background-size: cover;
 }
 
+.hero h2 {
+  padding: 0px 60px;
+  margin: 0px;
+}
+
 @media screen and (min-width: 768px) {
   .hero-image {
     height: 620px;
@@ -20,4 +25,3 @@
     background-size: cover;
   }
 }
-
