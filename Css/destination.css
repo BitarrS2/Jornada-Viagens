@@ -1,0 +1,111 @@
+.destination-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.destination .item header {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px 16px 20px;
+  background: transparent;
+}
+
+.destination .item header .img-item {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+}
+
+.destination .item {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--text-primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.destination .item p {
+  margin: 0;
+  padding: 8px 16px 0;
+  color: #222222;
+  line-height: 1.6;
+}
+
+.destination .item footer {
+  padding: 24px 16px 24px;
+}
+
+.destination .item footer .button {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.destination .item footer .button:hover {
+  background-color: var(--primary-color);
+}
+
+.destination .item.tokyo .img-item {
+  background-image: url("../img/tokyo-mobile.jpg");
+}
+
+.destination .item.osaka .img-item {
+  background-image: url("../img/osaka-mobile.jpg");
+}
+
+@media screen and (min-width: 768px) {
+  .destination-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    align-items: stretch;
+  }
+
+  .destination .item {
+    flex: 0 0 calc(50% - 12px);
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .destination .item.tokyo .img-item {
+    background-image: url("../img/tokyo-tablet-desk.jpg");
+  }
+
+  .destination .item.osaka .img-item {
+    background-image: url("../img/osaka-tablet-desk.jpg");
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destination .item {
+    width: calc(50% - 12px);
+    max-width: 588px;
+  }
+
+  .destination .item header {
+    min-height: 280px;
+    padding: 30px 24px 26px;
+  }
+
+  .destination .item h4 {
+    font-size: 32px;
+  }
+
+  .destination .item p {
+    padding: 26px 24px 0;
+    font-size: 1rem;
+  }
+
+  .destination .item footer {
+    padding: 26px 24px 24px;
+  }
+}
