@@ -52,6 +52,10 @@ body {
   background-color: var(--background-primary-color);
 }
 
+legend {
+  color: #000000;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -71,7 +75,7 @@ body {
   margin: 16px auto 32px;
 }
 
-.button{
+.button {
   width: 280px;
   height: 64px;
   color: var(--text-secondary-color);
@@ -92,7 +96,5 @@ body {
 @media screen and (min-width: 1024px) {
   .button:hover {
     background-color: var(--primary-color);
-
   }
-  
 }
